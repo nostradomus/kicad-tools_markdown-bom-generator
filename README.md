@@ -6,7 +6,7 @@
 
 This repository contains python code to generate a `markdown` formatted file which will contain the bill-of-materials for a [KiCad](http://kicad-pcb.org) project. The table inside this `markdown` document sources its content from the [KiCad](http://kicad-pcb.org) `.csv` export.
 
-This generator has been developed, based on [KiCad version 5.1.2](http://kicad-pcb.org/blog/2019/03/KiCad-5.1.2-Release/).
+This generator has been developed, based on [KiCad version 5.1.2](http://kicad-pcb.org/blog/2019/04/KiCad-5.1.2-Release/).
 
 ## :globe_with_meridians: License
 
