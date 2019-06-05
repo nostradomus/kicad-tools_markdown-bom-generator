@@ -1,0 +1,10 @@
+# MacOS folder metadata
+.DS_Store
+
+# Temporary files
+*.000
+*.bak
+*.bck
+*~
+_autosave-*
+*.tmp
