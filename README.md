@@ -16,6 +16,14 @@ This generator has been developed, based on [KiCad version 5.1.2](http://kicad-p
 
 .........coming soon........
 
+## Contributors
+
+If you are having any good suggestions, just drop me a line [:email:](http://nostradomus.ddns.net/contactform.html).
+If feasible, I'll be happy to implement any proposed improvements.
+And if you are having lots of time, I'll be happy to share the work with you ;-).
+
+When you create your own version, don't forget to tell us about your work. We'll be happy to publish a link in the :confetti_ball:Hall of Fame:confetti_ball:.
+
 ## :globe_with_meridians: License
 
 At this moment, there is no specific license attached to this project.
