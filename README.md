@@ -8,6 +8,14 @@ This repository contains python code to generate a `markdown` formatted file whi
 
 This generator has been developed, based on [KiCad version 5.1.2](http://kicad-pcb.org/blog/2019/04/KiCad-5.1.2-Release/).
 
+## Why
+
+.........coming soon........
+
+## How to use it
+
+.........coming soon........
+
 ## :globe_with_meridians: License
 
 At this moment, there is no specific license attached to this project.
