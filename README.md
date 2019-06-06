@@ -14,11 +14,13 @@ This generator has been developed, based on [KiCad version 5.1.2](http://kicad-p
 
 The bill-of-materials is an implicit part of any electronics project. When publishing such a project on GitHub, it is important that interested people can view this information in an easily human-readable format.
 
-## Next step
+## How
 
-The current version has been written as a stand-alone tool.  
-KiCad also provides an [API](http://docs.kicad-pcb.org/doxygen/classBOM__PLUGIN.html), and the possibility to integrate custom [BOM-export plugins](http://docs.kicad-pcb.org/5.1.2/en/eeschema/eeschema.html#command-line-format-example-for-python-scripts) directly in the application.  
-This is the wish-list item for the next version of this tool.
+The code for this script has been written in [Python 2.7.15](https://www.python.org/downloads/release/python-2715/) on [MacOS High Sierra](https://en.wikipedia.org/wiki/MacOS_High_Sierra). It has been tested in parallel on [Windows 10](https://www.microsoft.com/en-us/windows) with [Python 3.7.3](https://www.python.org/downloads/release/python-373/). The script only uses `sys`, `OS` and `argparse` functionalities, which come with the standard distribution. As such, there are no references to any external libraries.
+
+The current version has been written as a stand-alone tool. The input-file is passed as an argument. The output-file is generated in the same folder, or on a custom location (if defined by an optional argument).
+
+KiCad also provides an [API](http://docs.kicad-pcb.org/doxygen/classBOM__PLUGIN.html), and the possibility to integrate custom [BOM-export plugins](http://docs.kicad-pcb.org/5.1.2/en/eeschema/eeschema.html#command-line-format-example-for-python-scripts) directly in the application. This is the wish-list item for the next version of this tool.
 
 ## Progress status
 
