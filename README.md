@@ -20,6 +20,16 @@ The current version has been written as a stand-alone tool.
 KiCad also provides an [API](http://docs.kicad-pcb.org/doxygen/classBOM__PLUGIN.html), and the possibility to integrate custom [BOM-export plugins](http://docs.kicad-pcb.org/5.1.2/en/eeschema/eeschema.html#command-line-format-example-for-python-scripts) directly in the application.  
 This is the wish-list item for the next version of this tool.
 
+## Progress status
+
+ - [x] have an [idea](#what), and a [reason](#why) why to make it
+ - [x] decide on how it should [work](#how)
+ - [x] write the [code](source/)  
+ - [x] [test](#how) it properly
+ - [ ] document the [source code](source/) and the important [snippets](#snippets)
+ - [ ] write a [user manual](#how_to_use_it)
+ - [ ] add [sample material](examples/) (Kicad `.csv` test-data, and processed minified markdown documents)
+
 ## How to use it
 
 .........coming soon........
