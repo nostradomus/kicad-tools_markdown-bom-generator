@@ -10,7 +10,7 @@ This generator has been developed, based on [KiCad version 5.1.2](http://kicad-p
 
 ## Why
 
-.........coming soon........
+The bill-of-materials is an implicit part of any electronics project. When publishing such a project on GitHub, it is important that interested people can view this information in an easily human-readable format. 
 
 ## How to use it
 
