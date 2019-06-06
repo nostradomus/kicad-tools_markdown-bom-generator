@@ -2,6 +2,8 @@
 
 ![](https://img.shields.io/badge/project%20status-under%20construction-lightgrey.svg)
 
+![](images/console-help.png)
+
 ## What
 
 This repository contains python code to generate a `markdown` formatted file which will contain the bill-of-materials for a [KiCad](http://kicad-pcb.org) project. The table inside this `markdown` document sources its content from the [KiCad](http://kicad-pcb.org) `.csv` export.
@@ -10,7 +12,13 @@ This generator has been developed, based on [KiCad version 5.1.2](http://kicad-p
 
 ## Why
 
-The bill-of-materials is an implicit part of any electronics project. When publishing such a project on GitHub, it is important that interested people can view this information in an easily human-readable format. 
+The bill-of-materials is an implicit part of any electronics project. When publishing such a project on GitHub, it is important that interested people can view this information in an easily human-readable format.
+
+## Next step
+
+The current version has been written as a stand-alone tool.  
+KiCad also provides an [API](http://docs.kicad-pcb.org/doxygen/classBOM__PLUGIN.html), and the possibility to integrate custom [BOM-export plugins](http://docs.kicad-pcb.org/5.1.2/en/eeschema/eeschema.html#command-line-format-example-for-python-scripts) directly in the application.  
+This is the wish-list item for the next version of this tool.
 
 ## How to use it
 
