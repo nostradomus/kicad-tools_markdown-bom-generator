@@ -24,7 +24,7 @@ def setupArgParser():
     '''
     parser = argparse.ArgumentParser(description=description, formatter_class=argparse.RawTextHelpFormatter)
     parser.add_argument('inputfile', help='bill-of-materials .csv-file from Kicad', nargs='*')
-    parser.add_argument('-o', '--outputfile', help='markdown file containing the generated BOM-table to publish on Github')
+    parser.add_argument('-o', '--outputfile', help='markdown file containing the generated BOM-table to publish on Github', nargs='*'))
 
     return parser
 
