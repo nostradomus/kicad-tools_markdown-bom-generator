@@ -1,4 +1,4 @@
-## ![](images/kicad-logo_transparent-xs.png)cad : `.csv` to `markdown` BOM generator tool
+## ![](images/kicad-logo_transparent-xxs.png) : `.csv` to `markdown` BOM generator tool
 
 ![](https://img.shields.io/badge/project%20status-under%20construction-lightgrey.svg)
 
