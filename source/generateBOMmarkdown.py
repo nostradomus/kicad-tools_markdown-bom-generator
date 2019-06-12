@@ -24,21 +24,20 @@ def setupArgParser():
     '''
     parser = argparse.ArgumentParser(description=description, formatter_class=argparse.RawTextHelpFormatter)
     parser.add_argument('inputfile', help='bill-of-materials .csv-file from Kicad', nargs='*')
-    parser.add_argument('-o', '--outputfile', help='markdown file containing the generated BOM-table to publish on Github', nargs='*'))
+    parser.add_argument('-o', '--outputfile', help='markdown file containing the generated BOM-table to publish on Github', nargs='*')
 
     return parser
 
 # helper to clean combined designators
 def simplifyNameList(names):
     nameList = names.split(",")
-    num = ["0","1","2","3","4","5","6","7","8","9"]
     numList = []
     if (len(nameList) > 1):
         for entry in nameList:
             i = 0
             alphaPart = True
             while (alphaPart):
-                if (entry[i] in num):
+                if (entry[i].isdigit()):
                     alphaPart = False
                 i += 1
             i -= 1
@@ -47,15 +46,43 @@ def simplifyNameList(names):
         numList.sort()
         minList = denominator
 
-        minList += minifyNumList(numList)
+        minList += minifyNumList2(numList)
 
         return minList
     else :
         return names
 
 # helper to group consecutive designators
-#  two consecutive denominators will also make a group
+#  groups should have at least 3 elements
 def minifyNumList(numList):
+    minList = ""
+    while (len(numList) > 0):
+        if (len(numList) == 1):
+            minList += str(numList.pop(0))
+        elif (len(numList) == 2):
+            minList = minList + str(numList.pop(0)) + "," + str(numList.pop(0))
+        elif (len(numList) > 2):
+            first = numList.pop(0)
+            if ((numList[0] - first) > 1):
+                minList = minList + str(first) + ","
+            else:
+                i = 0
+                while ((i < len(numList)) and ((numList[i] - first) == (i + 1))):
+                    i += 1
+                if (i < 2):
+                    minList = minList + str(first) + ","
+                else:
+                    last = ""
+                    while (i > 0):
+                        last = str(numList.pop(0))
+                        i -= 1
+                    minList = minList + str(first) + "-" + last + ","
+    minList = minList.rstrip(",")
+    return minList
+
+# helper to group consecutive designators
+#  two consecutive denominators will also make a group
+def minifyNumList2(numList):
     minList = ""
     while (len(numList) > 0):
         if (len(numList) == 1):
